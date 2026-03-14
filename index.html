@@ -203,6 +203,7 @@ footer{
   nav{padding:1.25rem}
   .nav-links{gap:1.25rem}
   .hero{padding:0 1.25rem 3rem}
+  .hero-sub-row{flex-direction:column;align-items:flex-start;gap:1rem}
   section{padding:4rem 1.25rem}
   .work-item{grid-template-columns:1fr auto;gap:1rem}
   .wi-num,.wi-role,.wi-year{display:none}
@@ -228,8 +229,7 @@ footer{
   <section class="hero" id="hero" style="border:none">
     <h1 class="hero-headline">Product designer<br>who cares about<br><em>the right problem.</em></h1>
     <div class="hero-sub-row">
-      <p class="hero-sub">Driven by passion — and fuelled by curiosity,
-Calais Soper is a digital designer specialising in crafting meaningful user-centered solutions in Auckland, NZ. </p>
+      <p class="hero-sub">Based in Auckland. I design products that are clear, considered, and built around real people — not assumptions.</p>
       <div class="hero-avail"><span class="avail-dot"></span> Available for new work</div>
     </div>
   </section>
@@ -253,7 +253,7 @@ Calais Soper is a digital designer specialising in crafting meaningful user-cent
         </div>
         <div>
           <ul class="about-list">
-            <li><span>Currently</span><span>Intermediate Product Designer</span></li>
+            <li><span>Currently</span><span>Senior Product Designer</span></li>
             <li><span>Previously</span><span>Health tech, Agency</span></li>
             <li><span>Education</span><span>BDes, Distinction</span></li>
             <li><span>Location</span><span>Auckland, NZ</span></li>
@@ -267,20 +267,19 @@ Calais Soper is a digital designer specialising in crafting meaningful user-cent
   <section id="contact">
     <div class="section-inner">
       <div class="section-label">Contact</div>
-      <p class="contact-big">Got a project?<br>Let's talk.<br><a href="mailto:hello@calaissoper.co">hello@calaissoper.co</a></p>
+      <p class="contact-big">Got a project?<br>Let's talk.<br><a href="/cdn-cgi/l/email-protection#c5ada0a9a9aa85a6a4a9a4acb6b6aab5a0b7eba6aa"><span class="__cf_email__" data-cfemail="a5cdc0c9c9cae5c6c4c9c4ccd6d6cad5c0d78bc6ca">[email&#160;protected]</span></a></p>
       <div class="contact-row">
         <div>
           <span class="contact-item-label">LinkedIn</span>
           <span class="contact-item-val">linkedin.com/in/calaissoper</span>
         </div>
-        <!-- <div>
+        <div>
           <span class="contact-item-label">Twitter / X</span>
           <span class="contact-item-val">@calaissoper</span>
-        </div> -->
+        </div>
         <div>
           <span class="contact-item-label">Resume</span>
-          <span class="contact-item-val"><a href="https://drive.google.com/file/d/1xPcPE4aNJzmAV_d4_rfmEME_pWqSiafw/view?usp=sharing
-">Open resume</span>
+          <a class="contact-item-val" href="https://drive.google.com/file/d/1xPcPE4aNJzmAV_d4_rfmEME_pWqSiafw/view?usp=sharing" target="_blank" rel="noopener" style="text-decoration:none;color:inherit">Open resume ↗</a>
         </div>
         <div>
           <span class="contact-item-label">Based in</span>
@@ -305,7 +304,7 @@ Calais Soper is a digital designer specialising in crafting meaningful user-cent
   </div>
 </div>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 const projects = [
   {
     num:'01', title:'Payments redesign', role:'Lead designer', year:'2025',
@@ -444,17 +443,4 @@ function renderSkills() {
         io.disconnect();
       }
     });
-  }, {threshold: 0.3});
-  io.observe(document.getElementById('skills'));
-}
-
-function goTo(id) {
-  const el = document.getElementById(id);
-  if (el) el.scrollIntoView({behavior:'smooth'});
-}
-
-renderWork();
-renderSkills();
-</script>
-</body>
-</html>
+  
